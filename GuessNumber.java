@@ -14,16 +14,18 @@ static void GuessNumber(){
         int guess=sc.nextInt();
         if(guess==number){
             System.out.println("Wohoo! You have guessed it right...");
+            break;
         }
-        else if(number>guess && i!=5){
+        else if(number>guess && i!=4){
             System.out.println("The number is greater than "+guess);
         }
-        else if(number<guess && i!=5)
+        else if(number<guess && i!=4)
         System.out.println("The number is less than "+guess);
          
     }
     if(i==chances)
     System.out.println("Oops! you have failed to guess the number...");
+    System.out.println("The number was "+number);
 }
 public static void main(String[] args) {
     GuessNumber();
